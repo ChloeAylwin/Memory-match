@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Memory Match — Classic Card Game</title>
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<div class="app">
+<header>
+<h1>Memory Match</h1>
+<div class="controls">
+<label for="pairs">Pairs:</label>
+<select id="pairs">
+<option value="6">6</option>
+<option value="8" selected>8</option>
+<option value="10">10</option>
+</select>
+<button id="start">Start Game</button>
+</div>
+</header>
+
+
+<main>
+<section id="game-info">
+<p>Moves: <span id="moves">0</span> • Time: <span id="time">0:00</span></p>
+</section>
+
+
+<section id="board" class="board" aria-live="polite">
+<!-- cards injected here -->
+</section>
+
+
+<div id="win" class="modal hidden">
+<div class="modal-content">
+<h2>Well done!</h2>
+<p>You finished the game.</p>
+<p>Moves: <span id="final-moves">0</span></p>
+<p>Time: <span id="final-time">0:00</span></p>
+<button id="play-again">Play again</button>
+</div>
+</div>
+</main>
+
+
+<footer>
+<p>Built with ❤️ — demo game</p>
+</footer>
+</div>
+
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
